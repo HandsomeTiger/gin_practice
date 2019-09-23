@@ -6,6 +6,13 @@ import (
 )
 
 func main(){
+	s:=gin.Default()
+	s.GET("/")
+}
+
+
+
+func example(){
 	serve:=gin.Default()
 	serve.Use(func(ctx *gin.Context) {
 		fmt.Println("middleer")})
